@@ -1,64 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie website</title>
-    <style>
-        body{
-            background: skyblue;
-        }
-        .wrap{
-            width: 1000px;
-            margin: auto;
-            margin-top: 100px;
-        }
-        .card{
-            body{
-  background-color: black;
-  background-repeat: no-repeat;
-background-attachment: fixed;
-background-image: url(flim_website__2_2x.jpg);
-background-position: center;
-background-size: cover;
-}
-h1{
-  background-color: aqua;
-  font-family: "Pirata One";
-  border-top-style:dotted;
-  border-bottom-style:dotted;
-  border-left-style: double;
-  border-left-width: 10px;
-  border-left-color: black;
-
-}
-
-p{
-  background-color:deepskyblue;
-  font-family: "consolas",sans-serif;
-  font-style: italic;
-  font-weight: bolder;
-  text-decoration:wavy underline;
-  font-size: 18px;
-  border-style: groove;
-  border-width: 5px;
-  border-color: darkcyan;
-  border-radius: 10px;
-  padding: 5px;
-}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>movie design</title>
 </head>
 <body>
- <div class="wrap">
-    <div class="card">
-        <img src="flim_website__2_2x.jpg" alt="film" style="width: 100%;">
-        <div class="container">
-            <h4><b>MOVIES</b></h4>
-            <p>
-                Movies, or films, are a form of visual storytelling that combines moving images with sound to convey narratives, emotions, and themes. They can be created in various genres, including drama, comedy, horror, action, romance, and documentary, each offering different experiences and perspectives.</p>
-        </div>
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo-container"><h1 class="logo">Flexs</h1></div>
+      <div class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-list-item-active">Home</li>
+          <li class="menu-list-item">Movies</li>
+          <li class="menu-list-item">Series</li>
+          <li class="menu-list-item">Popular</li>
+          <li class="menu-list-item">Trends</li> 
+
+        </ul>
+      </div>
+      <div class="profile-container">
+  <img class="profile-picture" src="img/cat.jpg" alt="">
+  <div class="profile-text-container">
+    <span class="profile-text">Profile</span>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+  <div class="toggle">
+    <i class="fa-regular fa-moon toggle-icon"></i>
+    <i class="fa-solid fa-sun toggle-icon"></i>
+<div class="toggle-ball"></div>
+
+  </div>
+      </div>
     </div>
- </div>   
+  </div>
+  <div class="sidebar">
+    <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+    <i class="left-menu-icon fa-regular fa-user"></i>
+    <i class="left-menu-icon fa-solid fa-book-bookmark"></i>
+    <i class="left-menu-icon fa-solid fa-tv"></i>
+    <i class="left-menu-icon fa-solid fa-hourglass-half"></i>
+    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+  </div>
+  <div class="container">
+    <div class="content-container">
+      <div class="featured-content"
+      style="background: url(img/japan.jpg);"
+      >
+<img class="featured-title" src="img/beauty and the beast.jpg">
+
+<div class=" featured-description">
+  <p>The story emphasizes the importance of looking beyond superficial traits to find true beauty and the transformative power of love. It has been retold in various forms, most notably in the animated Disney film, which added memorable music and vibrant characters.  </p>
+<button class="featured-button">WACHT</button>
+</div>
+<div class="movie-list-container">
+  <h1 class="movie-list-title">NEW RELEASES</h1>
+  <div class="movie-list-wrapper">
+
+    <div class="movie-list">
+      <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+        <span class="movie-list-item-title">beetlejuice</span>
+        <p class="movie-list-item-description"></p>
+        <button class="movie-list-item-button">WATCH</button>
+
+      </div>
+      <div class="movie-list">
+        <div class="movie-list-item">
+          <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+          <span class="movie-list-item-title">beetlejuice</span>
+          <p class="movie-list-item-description"></p>
+          <button class="movie-list-item-button">WATCH</button>
+  
+        </div>
+        <div class="movie-list">
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+            <span class="movie-list-item-title">beetlejuice</span>
+            <p class="movie-list-item-description"></p>
+            <button class="movie-list-item-button">WATCH</button>
+    
+          </div>
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+              <span class="movie-list-item-title">beetlejuice</span>
+              <p class="movie-list-item-description"></p>
+              <button class="movie-list-item-button">WATCH</button>
+      
+            </div>
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                <span class="movie-list-item-title">beetlejuice</span>
+                <p class="movie-list-item-description"></p>
+                <button class="movie-list-item-button">WATCH</button>
+        
+              </div>
+              <div class="movie-list">
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                  <span class="movie-list-item-title">beetlejuice</span>
+                  <p class="movie-list-item-description"></p>
+                  <button class="movie-list-item-button">WATCH</button>
+          
+                </div>
+                <div class="movie-list">
+                  <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                    <span class="movie-list-item-title">beetlejuice</span>
+                    <p class="movie-list-item-description"></p>
+                    <button class="movie-list-item-button">WATCH</button>
+            
+                  </div>
+                  <div class="movie-list">
+                    <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                      <span class="movie-list-item-title">beetlejuice</span>
+                      <p class="movie-list-item-description"></p>
+                      <button class="movie-list-item-button">WATCH</button>
+              
+                    </div>
+                    <div class="movie-list">
+                      <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                        <span class="movie-list-item-title">beetlejuice</span> 
+                        <p class="movie-list-item-description"></p>
+                        <button class="movie-list-item-button">WATCH</button>
+                
+                      </div>
+                      <div class="movie-list">
+                        <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/beetlejuice.jpg">
+                          <p class="movie-list-item-description"></p>
+                          <span class="movie-list-item-title">beetlejuice</span>
+                          <button class="movie-list-item-button">WATCH</button>
+                  
+                        </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+<i class="fa-solid fa-circle-chevron-right arrow"></i>
+
+  </div>
 </body>
-</html>
+</html> 
